@@ -1,0 +1,155 @@
+:root {
+  --primarycolor: black;
+  --secondarycolor: grey;
+  --thirdcolor: white;
+}
+** {
+  background: skyblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper {
+  background-color: skyblue;
+  border: solid 1px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 40px;
+}
+.calculator {
+  display: grid;
+  background: var(--primarycolor);
+  gap: 3px;
+  border: solid 2px red;
+  border-radius: 30px;
+  padding: 30px;
+  justify-content: space-evenly;
+
+  grid-template-areas:
+    "display display display display"
+    "btn-AC btn-C btn-perc btn-divide"
+    "btn-7 btn-8 btn-9 btn-multiply"
+    "btn-4 btn-5 btn-6  btn-minus"
+    "btn-1 btn-2 btn-3 btn-plus"
+    "btn-dot btn-0 btn-equals btn-equals";
+}
+
+.calculator > div {
+  height: 40px;
+  padding: 30px;
+  background: skyblue;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  background-color: rgba(74, 72, 72, 0.5) !important;
+}
+.btn {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  color: var(--thirdcolor);
+}
+.calculator > .btn:hover {
+  background: rgba(238, 4, 4, 0.5) !important;
+}
+.back {
+  color: var(--thirdcolor);
+  background-color: rgba(74, 72, 72, 0.5) !important;
+}
+.display {
+  grid-area: display;
+  justify-content: flex-end !important;
+  font-weight: bold;
+  border: dotted 1px red;
+  align-content: right;
+
+  /* background-color: skyblue !important; */
+}
+.display ~ span {
+  align-items: right;
+}
+.btn-Ac {
+  grid-area: btn-AC;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.btn-C {
+  grid-area: btn-C;
+  font-weight: bold;
+}
+
+.btn-perc {
+  grid-area: btn-perc;
+  font-weight: bold;
+}
+
+.btn-divide {
+  grid-area: btn-divide;
+  font-weight: bold;
+}
+.btn-7 {
+  grid-area: btn-7;
+  font-weight: bold;
+}
+.btn-8 {
+  grid-area: btn-8;
+  font-weight: bold;
+}
+.btn-9 {
+  grid-area: btn-9;
+  font-weight: bold;
+}
+.btn-multiply {
+  grid-area: btn-multiply;
+  font-weight: bold;
+}
+.btn-4 {
+  grid-area: btn-4;
+  font-weight: bold;
+}
+.btn-5 {
+  grid-area: btn-5;
+  font-weight: bold;
+}
+.btn-6 {
+  grid-area: btn-6;
+  font-weight: bold;
+}
+.btn-minus {
+  grid-area: btn-minus;
+  font-weight: bold;
+}
+.btn-1 {
+  grid-area: btn-1;
+  font-weight: bold;
+}
+.btn-2 {
+  grid-area: btn-2;
+  font-weight: bold;
+}
+.btn-3 {
+  grid-area: btn-3;
+  font-weight: bold;
+}
+
+.btn-plus {
+  grid-area: btn-plus;
+  font-weight: bold;
+}
+.btn-0 {
+  grid-area: btn-0;
+  font-weight: bold;
+}
+
+.btn-dot {
+  grid-area: btn-dot;
+  font-weight: bold;
+}
+.btn-equals {
+  grid-area: btn-equals;
+  font-weight: bold;
+}
